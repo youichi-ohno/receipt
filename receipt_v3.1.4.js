@@ -766,17 +766,6 @@ function islatterdaylater(formerday, latterday) {
 }
 
 
-//昇順に並び替え1
-function descOrder(val1, val2) {
-    if (val1.order > val2.order) {
-        return 1;
-    } else if (val1.order < val2.order) {
-        return -1;
-    } else {
-        return 0;
-    }
-}
-
 //昇順に並び替え選択
 function descOrder11(val1 = [], orderSelect) {
     let result;
@@ -791,22 +780,6 @@ function descOrder11(val1 = [], orderSelect) {
         });
         return result;
     }
-}
-
-//昇順に並び替え
-function descOrder1(val1 = []) {
-    let result = val1.sort(function (a, b) {
-        return a[0] - b[0];
-    });
-    return result;
-}
-
-//昇順に並び替え（印刷準）
-function descOrder2(val1 = []) {
-    let result = val1.sort(function (a, b) {
-        return a[4] - b[4];
-    });
-    return result;
 }
 
 //グループ長並び替え
